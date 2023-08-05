@@ -12,7 +12,7 @@ endif
 endif
 
 CFLAGS_NON_EFI := -fno-pic -ffixed-r9 -ffunction-sections -fdata-sections \
-		  -fstack-protector-strong
+		  -fstack-protector-strong -gdwarf4
 CFLAGS_EFI := -fpic -fshort-wchar
 
 ifneq ($(CONFIG_LTO)$(CONFIG_USE_PRIVATE_LIBGCC),yy)
